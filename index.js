@@ -1,6 +1,4 @@
-function calc(x1, x2, operator){
+//Basico2-Função Anônima
+(function(x1, x2, operator){
     return eval(`${x1} ${operator} ${x2}`);
-}
-
-let resultado = calc(1, 2, "-");
-console.log(resultado);
+})(1, 2, "-");
