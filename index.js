@@ -1,9 +1,6 @@
-let n = 9;
-
-for(let i =0; i <=10; i++){
-
-    //Templete String- Em outras palavras texto mutante
-    console.log(`${i} x ${n} = ${i*n}`);
-    //console.log(i + "X" + n + "=" + (i*n));
-
+function calc(x1, x2, operator){
+    return eval(`${x1} ${operator} ${x2}`);
 }
+
+let resultado = calc(1, 2, "-");
+console.log(resultado);
