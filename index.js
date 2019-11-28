@@ -1,7 +1,13 @@
-//Basico2 - Arrow function
-let calc = (x1, x2, operator) => {
-    return eval(`${x1} ${operator} ${x2}`);
-}
+//Basico2 - Eventos(window X document)
+/**
+ * Diferença entre window e document, window é minha janela agora document e o site!
+ * window temos acesso ao historico do usuario, dá refresh na janela
+ * mudar propriedade da janela por exemplo abrir uma nova janela
+ */
+window.addEventListener('focus', event => {
+    console.log("focus");
+});
 
-let resultados = calc(1, 2, "+");
-console.log(resultados);
+document.addEventListener('click', event => {
+    console.log("click");
+});
